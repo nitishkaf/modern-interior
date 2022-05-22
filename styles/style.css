@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Space+Mono&display=swap");
+
+* {
+  font-family: "Lora", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181719;
+  color: #fff;
+}
+
+#navigation-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #181719;
+  z-index: 4;
+}
+
+.navbar-overlay ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.navbar-overlay ul li {
+  padding-bottom: 20%;
+}
+
+.whole-container {
+  margin: 0 80px;
+}
+
+/* Navigation Style */
+
+.navigation {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-logo {
+  font-size: 14px;
+  font-weight: 200;
+  border: 1px solid #fff;
+  padding: 8px;
+  width: 110px;
+  text-transform: uppercase;
+}
+
+.navigation-items ul,
+.navbar-overlay ul {
+  list-style: none;
+  display: flex;
+}
+
+.navigation-items li {
+  margin-left: 90px;
+}
+
+.navigation-items ul a,
+.navbar-overlay ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.navigation-items ul .home {
+  font-weight: 700;
+}
+
+.navigation #menu-icon {
+  display: none;
+}
+
+.navigation #menu-icon-close {
+  display: none;
+  z-index: 5;
+}
+
+/* Content Section  */
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px auto;
+}
+
+.main-container .main-container-text {
+  padding: 50px;
+}
+
+.main-container-text h1 {
+  font-size: 50px;
+}
+
+.main-container .main-container-text p {
+  width: 60%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 45px 0;
+}
+
+.main-container .main-container-text .main-container-text-readmore a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.main-container .main-container-text .main-container-text-readmore i {
+  margin-left: 5px;
+}
+
+.main-container .main-container-design-section-image img {
+  width: 100%;
+}
+
+.main-container-design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Designer Section */
+
+.designer-section-wrapper {
+  position: relative;
+  margin-bottom: 80px;
+  margin-right: 30px;
+  z-index: 1;
+  background-color: #181719;
+  border: 2px solid #181719;
+  max-width: 60%;
+  max-height: 100%;
+}
+
+.designer-section-wrapper > * {
+  margin: 15px auto 30px auto;
+}
+
+.designer-section-wrapper .designer {
+  display: flex;
+}
+
+.designer-section-wrapper img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.designer-section-wrapper .designer-about {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.designer-about p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #828282;
+}
+
+.designer-section-wrapper .title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10%;
+  width: 60%;
+}
+
+.main-container-design-section hr {
+  background-color: #181719;
+  border-color: #828282;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+.whole-container .created {
+  color: #a9a9a9a9;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+/* Media Queries */
+
+@media (max-width: 800px) {
+  .navigation-items ul,
+  .main-container {
+    display: block;
+  }
+
+  .whole-container {
+    margin: 0 20px;
+  }
+
+  .navigation #menu-icon {
+    display: block;
+  }
+
+  .navigation-items {
+    display: none;
+  }
+
+  .main-container-text h1 {
+    font-size: 35px;
+  }
+
+  .main-container-design-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .designer-section-wrapper {
+    width: 300px;
+    margin-right: 0px;
+  }
+
+  .designer-section-wrapper .title {
+    font-size: 18px;
+  }
+  hr {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container .main-container-text p,
+  .main-container .main-container-text span {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
